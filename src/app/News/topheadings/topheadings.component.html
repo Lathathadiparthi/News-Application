@@ -1,0 +1,17 @@
+ <div  style="margin-left:100px; margin-top:50px;">
+    <h4>Top Headlines </h4>
+ </div>
+ <div class="container mt-5">
+    <div class="row"> 
+        <div *ngFor="let d of topHeadingsDisplay" class="col-lg-3 mt-3 mb-3" > 
+            <div cla="box">  
+               <img src="{{d.urlToImage}}" width="100%"> 
+              <h5 class="mt-2 mb-2">  {{d.title}} </h5>  
+              <a  href="{{d.url}}">Read more</a>
+
+            </div>
+        </div>
+
+     </div>
+
+</div>
